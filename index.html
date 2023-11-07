@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="src/css/variables.css" />
+
+    <link
+      rel="shortcut icon"
+      href="src/assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Solution Stats Preview</title>
+  </head>
+  <body
+    class="bg-[var(--main-background)] flex h-screen w-screen justify-center items-center p-14"
+  >
+    <main
+      class="bg-[var(--card-background)] sm:max-w-4xl flex rounded-md flex-col-reverse sm:flex-row text-center sm:text-left"
+    >
+      <div class="sm:w-1/2 p-10">
+        <h1 class="text-white text-3xl font-inter font-bold mb-6">
+          Get <span class="text-[var(--accent)]">insights</span> that help your
+          business grow.
+        </h1>
+
+        <p class="text-white/[.75] mb-16">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <ul
+          class="sm:flex justify-between text-white font-lexend-deca text-2xl"
+        >
+          <li class="flex flex-col mb-10">
+            <p class="mb-1.5">10k+</p>
+            <span class="text-white/[.6] text-xs uppercase tracking-widest"
+              >companies</span
+            >
+          </li>
+          <li class="flex flex-col mb-10">
+            <p class="mb-1.5">314</p>
+            <span class="text-white/[.6] text-xs uppercase tracking-widest"
+              >templates</span
+            >
+          </li>
+          <li class="flex flex-col">
+            <p class="mb-1.5">12M+</p>
+            <span class="text-white/[.6] text-xs uppercase tracking-widest"
+              >queries</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="sm:w-1/2 relative">
+        <div class="absolute w-full h-full bg-softViolet z-10 mix-blend-multiply"></div>
+
+        <picture>
+          <source
+            media="(45rem)"
+            srcset="src/assets/images/image-header-desktop.jpg"
+            class="h-full rounded-r-md"
+          />
+
+          <img
+            src="src/assets/images/image-header-mobile.jpg"
+            alt="image"
+            class="sm:h-full rounded-t-md sm:rounded-none sm:rounded-r-md"
+          />
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>
